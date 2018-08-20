@@ -1,0 +1,32 @@
+.frame {
+    border: 1px solid #000;
+    width: 150px;
+    height: 120px;
+    display: inline-block;
+}
+
+.frame-input {
+    width: 46px;
+    height: 46px;
+    font-size: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+.frame-input.second {
+    border: 2px solid #000;
+}
+
+.frame-identifier {
+    width: 150px;
+    height: 20px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+.score {
+    width: 150px;
+    height: 20px;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 20px;
+}

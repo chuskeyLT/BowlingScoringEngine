@@ -1,0 +1,28 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Bowling Scorer
+  </h1>
+</div>
+<h2>Rules: </h2>
+<ul>
+  <li>
+    Enter x or X for a strike.
+  </li>
+  <li>
+    Enter / for a spare.
+  </li>
+  <li>
+    Enter 0-9 for each shot if it is not a strike or spare.
+  </li>
+</ul>
+<div *ngFor="let frame of frameArray">
+  <app-frame-component [myFrame]="frame"></app-frame-component>
+</div>
+<app-tenth-frame [myFrame]="tenthFrame"></app-tenth-frame>
+<br /><br />
+<button (click)="ProcessScores()">Process Scores</button>
+<br /><br />
+<div *ngFor="let error of errors">
+  <div class="error">{{error}}</div>
+</div>

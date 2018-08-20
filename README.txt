@@ -13,5 +13,5 @@ To run API:
 To run UI:
 
 1. launch powershell or similar command line interface
-2. navigate to source location + UI\BowlingScoringApp
+2. navigate to source location + \UI
 3. run command ng serve -o to launch angular application in browser
