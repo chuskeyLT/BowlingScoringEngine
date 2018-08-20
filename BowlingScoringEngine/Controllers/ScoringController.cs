@@ -66,18 +66,26 @@ namespace BowlingScoringEngine.Controllers
               scores.Scores.Add(frame.ScoreFrame(tenthFrame.MarkOne, tenthFrame.MarkTwo));
             }
           }
-          
+
         }
-        
+
         catch (Exception ex)
         {
           scores.HasErrors = true;
           scores.Errors.Add(ex.Message);
         }
       }
-
-      scores.Scores.Add(tenthFrame.ScoreFrame());
-
+      try
+      {
+        tenthFrame.ValidateTenthFrame();
+        
+        scores.Scores.Add(tenthFrame.ScoreFrame());
+      }
+      catch (Exception ex)
+      {
+        scores.HasErrors = true;
+        scores.Errors.Add(ex.Message);
+      }
       return scores;
     }
   }

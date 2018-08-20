@@ -46,8 +46,14 @@ namespace BowlingScoringEngine.Models
 
       //Open
       var score = 0;
-      score += Convert.ToInt32(MarkOne);
-      score += Convert.ToInt32(MarkTwo);
+      if (!string.IsNullOrEmpty(MarkOne))
+      {
+        score += Convert.ToInt32(MarkOne);
+        if (!string.IsNullOrEmpty(MarkTwo))
+        {
+          score += Convert.ToInt32(MarkTwo);
+        }
+      }
 
       if (score > 9)
         throw new ApplicationException($"Open frame {Index} cannot score more than 9 points.");
