@@ -1,0 +1,17 @@
+C:\_Projects\BowlingScoringEngine\BowlingScoringEngineCore\bin\Debug\netcoreapp2.2\BowlingScoringEngineCore.deps.json
+C:\_Projects\BowlingScoringEngine\BowlingScoringEngineCore\bin\Debug\netcoreapp2.2\BowlingScoringEngineCore.runtimeconfig.json
+C:\_Projects\BowlingScoringEngine\BowlingScoringEngineCore\bin\Debug\netcoreapp2.2\BowlingScoringEngineCore.runtimeconfig.dev.json
+C:\_Projects\BowlingScoringEngine\BowlingScoringEngineCore\bin\Debug\netcoreapp2.2\BowlingScoringEngineCore.dll
+C:\_Projects\BowlingScoringEngine\BowlingScoringEngineCore\bin\Debug\netcoreapp2.2\BowlingScoringEngineCore.pdb
+C:\_Projects\BowlingScoringEngine\BowlingScoringEngineCore\bin\Debug\netcoreapp2.2\BowlingScoringLibrary.dll
+C:\_Projects\BowlingScoringEngine\BowlingScoringEngineCore\bin\Debug\netcoreapp2.2\BowlingScoringLibrary.pdb
+C:\_Projects\BowlingScoringEngine\BowlingScoringEngineCore\obj\Debug\netcoreapp2.2\BowlingScoringEngineCore.csprojAssemblyReference.cache
+C:\_Projects\BowlingScoringEngine\BowlingScoringEngineCore\obj\Debug\netcoreapp2.2\BowlingScoringEngineCore.csproj.CoreCompileInputs.cache
+C:\_Projects\BowlingScoringEngine\BowlingScoringEngineCore\obj\Debug\netcoreapp2.2\BowlingScoringEngineCore.RazorAssemblyInfo.cache
+C:\_Projects\BowlingScoringEngine\BowlingScoringEngineCore\obj\Debug\netcoreapp2.2\BowlingScoringEngineCore.RazorAssemblyInfo.cs
+C:\_Projects\BowlingScoringEngine\BowlingScoringEngineCore\obj\Debug\netcoreapp2.2\BowlingScoringEngineCore.AssemblyInfoInputs.cache
+C:\_Projects\BowlingScoringEngine\BowlingScoringEngineCore\obj\Debug\netcoreapp2.2\BowlingScoringEngineCore.AssemblyInfo.cs
+C:\_Projects\BowlingScoringEngine\BowlingScoringEngineCore\obj\Debug\netcoreapp2.2\BowlingScoringEngineCore.RazorTargetAssemblyInfo.cache
+C:\_Projects\BowlingScoringEngine\BowlingScoringEngineCore\obj\Debug\netcoreapp2.2\BowlingScoringEngineCore.csproj.CopyComplete
+C:\_Projects\BowlingScoringEngine\BowlingScoringEngineCore\obj\Debug\netcoreapp2.2\BowlingScoringEngineCore.dll
+C:\_Projects\BowlingScoringEngine\BowlingScoringEngineCore\obj\Debug\netcoreapp2.2\BowlingScoringEngineCore.pdb

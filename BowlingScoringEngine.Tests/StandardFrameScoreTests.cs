@@ -1,5 +1,6 @@
 ﻿using System;
-using BowlingScoringEngine.Models;
+
+using BowlingScoringLibrary.Models;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace BowlingScoringEngine.Tests
@@ -7,11 +8,13 @@ namespace BowlingScoringEngine.Tests
   [TestClass]
   public class StandardFrameScoreTests
   {
+      private readonly string[] _acceptableMarks = "0,1,2,3,4,5,6,7,8,9,x,X,/".Split(',');
+
     [TestMethod]
     public void ScoresStrike_IsStrike()
     {
       // Arrange
-      var newFrame = new StandardFrame(0, "x");
+      var newFrame = new StandardFrame(0, _acceptableMarks, "x");
 
       //Act
       // Assert
@@ -22,7 +25,7 @@ namespace BowlingScoringEngine.Tests
     public void ScoresSpare_IsSpare()
     {
       // Arrange
-      var newFrame = new StandardFrame(0, "3", "/");
+      var newFrame = new StandardFrame(0, _acceptableMarks, "3", "/");
 
       //Act
       // Assert
@@ -33,7 +36,7 @@ namespace BowlingScoringEngine.Tests
     public void ScoresTwoGutters_Returns0()
     {
       // Arrange
-      var newFrame = new StandardFrame(0, "0", "0");
+      var newFrame = new StandardFrame(0, _acceptableMarks, "0", "0");
 
       //Act
       var score = newFrame.ScoreFrame();
@@ -46,7 +49,7 @@ namespace BowlingScoringEngine.Tests
     public void ScoresOpenFrame_ReturnsCorrectValue()
     {
       // Arrange
-      var newFrame = new StandardFrame(0, "7", "1");
+      var newFrame = new StandardFrame(0, _acceptableMarks, "7", "1");
 
       //Act
       var score = newFrame.ScoreFrame();
@@ -59,7 +62,7 @@ namespace BowlingScoringEngine.Tests
     public void ScoresOpenFrame_CannotBeMoreThan9()
     {
       // Arrange
-      var newFrame = new StandardFrame(0, "7", "3");
+      var newFrame = new StandardFrame(0, _acceptableMarks, "7", "3");
       Exception expectedException = null;
 
       //Act
@@ -80,7 +83,7 @@ namespace BowlingScoringEngine.Tests
     public void ScoresSingleStrike_ScoresCorrectly()
     {
       // Arrange
-      var newFrame = new StandardFrame(0, "X");
+      var newFrame = new StandardFrame(0, _acceptableMarks, "X");
 
       //Act
       var score = newFrame.ScoreFrame();
@@ -93,7 +96,7 @@ namespace BowlingScoringEngine.Tests
     public void ScoresTwoStrikes_ScoresCorrectly()
     {
       // Arrange
-      var newFrame = new StandardFrame(0, "X");
+      var newFrame = new StandardFrame(0, _acceptableMarks, "X");
 
       //Act
       var score = newFrame.ScoreFrame("x");
@@ -106,7 +109,7 @@ namespace BowlingScoringEngine.Tests
     public void ScoresThreeStrikes_ScoresCorrectly()
     {
       // Arrange
-      var newFrame = new StandardFrame(0, "X");
+      var newFrame = new StandardFrame(0, _acceptableMarks, "X");
 
       //Act
       var score = newFrame.ScoreFrame("x", "x");
@@ -119,7 +122,7 @@ namespace BowlingScoringEngine.Tests
     public void ScoresStrikeThenSpare_ScoresCorrectly()
     {
       // Arrange
-      var newFrame = new StandardFrame(0, "X");
+      var newFrame = new StandardFrame(0, _acceptableMarks, "X");
 
       //Act
       var score = newFrame.ScoreFrame("7", "/");
@@ -132,7 +135,7 @@ namespace BowlingScoringEngine.Tests
     public void ScoresStrikeThenOpen_ScoresCorrectly()
     {
       // Arrange
-      var newFrame = new StandardFrame(0, "X");
+      var newFrame = new StandardFrame(0, _acceptableMarks, "X");
 
       //Act
       var score = newFrame.ScoreFrame("7", "2");
@@ -146,7 +149,7 @@ namespace BowlingScoringEngine.Tests
     {
       // Arrange
       Exception expectedException = null;
-      var newFrame = new StandardFrame(0, "X");
+      var newFrame = new StandardFrame(0, _acceptableMarks, "X");
 
       //Act
       try
@@ -168,7 +171,7 @@ namespace BowlingScoringEngine.Tests
     {
       // Arrange
       Exception expectedException = null;
-      var newFrame = new StandardFrame(0, "X");
+      var newFrame = new StandardFrame(0, _acceptableMarks, "X");
 
       //Act
       try
@@ -190,7 +193,7 @@ namespace BowlingScoringEngine.Tests
     {
       // Arrange
       Exception expectedException = null;
-      var newFrame = new StandardFrame(0, "X");
+      var newFrame = new StandardFrame(0, _acceptableMarks, "X");
 
       //Act
       try
@@ -212,7 +215,7 @@ namespace BowlingScoringEngine.Tests
     {
       // Arrange
       Exception expectedException = null;
-      var newFrame = new StandardFrame(0, "X");
+      var newFrame = new StandardFrame(0, _acceptableMarks, "X");
 
       //Act
       try
@@ -233,7 +236,7 @@ namespace BowlingScoringEngine.Tests
     public void ScoresSpare_ScoresCorrectly()
     {
       // Arrange
-      var newFrame = new StandardFrame(0, "6", "/");
+      var newFrame = new StandardFrame(0, _acceptableMarks, "6", "/");
 
       //Act
       var score = newFrame.ScoreFrame();
@@ -246,7 +249,7 @@ namespace BowlingScoringEngine.Tests
     public void ScoresSpare_ThenOpen_ScoresCorrectly()
     {
       // Arrange
-      var newFrame = new StandardFrame(0, "8", "/");
+      var newFrame = new StandardFrame(0, _acceptableMarks, "8", "/");
 
       //Act
       var score = newFrame.ScoreFrame("7");
@@ -259,7 +262,7 @@ namespace BowlingScoringEngine.Tests
     public void ScoresSpare_ThenStrike_ScoresCorrectly()
     {
       // Arrange
-      var newFrame = new StandardFrame(0, "2", "/");
+      var newFrame = new StandardFrame(0, _acceptableMarks, "2", "/");
 
       //Act
       var score = newFrame.ScoreFrame("x");
@@ -273,7 +276,7 @@ namespace BowlingScoringEngine.Tests
     {
       // Arrange
       Exception expectedException = null;
-      var newFrame = new StandardFrame(0, "0", "/");
+      var newFrame = new StandardFrame(0, _acceptableMarks, "0", "/");
 
       //Act
       try

@@ -96,3 +96,5 @@ C:\Users\Carl\Documents\LT\BowlingScoringEngine\BowlingScoringEngine\bin\System.
 C:\Users\Carl\Documents\LT\BowlingScoringEngine\BowlingScoringEngine\obj\Debug\BowlingScoringEngine.csprojResolveAssemblyReference.cache
 C:\Users\Carl\Documents\LT\BowlingScoringEngine\BowlingScoringEngine\obj\Debug\BowlingScoringEngine.dll
 C:\Users\Carl\Documents\LT\BowlingScoringEngine\BowlingScoringEngine\obj\Debug\BowlingScoringEngine.pdb
+C:\_Projects\BowlingScoringEngine\BowlingScoringEngine\obj\Debug\BowlingScoringEngine.csproj.CoreCompileInputs.cache
+C:\_Projects\BowlingScoringEngine\BowlingScoringEngine\obj\Debug\BowlingScoringEngine.csprojAssemblyReference.cache

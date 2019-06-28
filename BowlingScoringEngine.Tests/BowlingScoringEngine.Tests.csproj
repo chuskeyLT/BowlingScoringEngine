@@ -8,11 +8,12 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BowlingScoringEngine.Tests</RootNamespace>
     <AssemblyName>BowlingScoringEngine.Tests</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <IsCodedUITest>False</IsCodedUITest>
     <TestProjectType>UnitTest</TestProjectType>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -55,9 +56,9 @@
     <Compile Include="TenthFrameValidationTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BowlingScoringEngine\BowlingScoringEngine.csproj">
-      <Project>{E8C068C4-07B6-46A6-981E-2F4B3DAAE1A4}</Project>
-      <Name>BowlingScoringEngine</Name>
+    <ProjectReference Include="..\BowlingScoringLibrary\BowlingScoringLibrary.csproj">
+      <Project>{A5B26722-128A-4209-98AA-FC84E2B1B86B}</Project>
+      <Name>BowlingScoringLibrary</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

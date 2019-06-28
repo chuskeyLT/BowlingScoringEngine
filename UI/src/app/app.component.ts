@@ -56,7 +56,7 @@ export class AppComponent {
     postObject.Frames = this.frameArray;
     postObject.TenthFrame = this.tenthFrame;
 
-    this.http.post('http://localhost:58796/api/scoring', postObject).subscribe(obj => this.SetScores(<ReturnScore>obj));
+    this.http.post('https://localhost:44387/api/scoring', postObject).subscribe(obj => this.SetScores(<ReturnScore>obj));
   }
 
 

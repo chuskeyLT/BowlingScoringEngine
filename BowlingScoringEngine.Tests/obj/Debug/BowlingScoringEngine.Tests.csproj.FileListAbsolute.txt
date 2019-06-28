@@ -88,3 +88,14 @@ C:\Users\Carl\Documents\LT\BowlingScoringEngine\BowlingScoringEngine.Tests\bin\D
 C:\Users\Carl\Documents\LT\BowlingScoringEngine\BowlingScoringEngine.Tests\obj\Debug\BowlingScoringEngine.Tests.csprojResolveAssemblyReference.cache
 C:\Users\Carl\Documents\LT\BowlingScoringEngine\BowlingScoringEngine.Tests\obj\Debug\BowlingScoringEngine.Tests.dll
 C:\Users\Carl\Documents\LT\BowlingScoringEngine\BowlingScoringEngine.Tests\obj\Debug\BowlingScoringEngine.Tests.pdb
+C:\_Projects\BowlingScoringEngine\BowlingScoringEngine.Tests\obj\Debug\BowlingScoringEngine.Tests.csprojAssemblyReference.cache
+C:\_Projects\BowlingScoringEngine\BowlingScoringEngine.Tests\obj\Debug\BowlingScoringEngine.Tests.csproj.CoreCompileInputs.cache
+C:\_Projects\BowlingScoringEngine\BowlingScoringEngine.Tests\bin\Debug\BowlingScoringEngine.Tests.dll.config
+C:\_Projects\BowlingScoringEngine\BowlingScoringEngine.Tests\bin\Debug\BowlingScoringEngine.Tests.dll
+C:\_Projects\BowlingScoringEngine\BowlingScoringEngine.Tests\bin\Debug\BowlingScoringEngine.Tests.pdb
+C:\_Projects\BowlingScoringEngine\BowlingScoringEngine.Tests\bin\Debug\BowlingScoringLibrary.dll
+C:\_Projects\BowlingScoringEngine\BowlingScoringEngine.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\_Projects\BowlingScoringEngine\BowlingScoringEngine.Tests\bin\Debug\BowlingScoringLibrary.pdb
+C:\_Projects\BowlingScoringEngine\BowlingScoringEngine.Tests\obj\Debug\BowlingScoringEngine.Tests.csproj.CopyComplete
+C:\_Projects\BowlingScoringEngine\BowlingScoringEngine.Tests\obj\Debug\BowlingScoringEngine.Tests.dll
+C:\_Projects\BowlingScoringEngine\BowlingScoringEngine.Tests\obj\Debug\BowlingScoringEngine.Tests.pdb
