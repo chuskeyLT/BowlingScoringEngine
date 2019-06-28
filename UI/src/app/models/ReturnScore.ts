@@ -1,5 +1,5 @@
 export class ReturnScore {
-    Scores: number[];
-    HasErrors: boolean;
-    Errors: string[];
+    scores: number[];
+    hasErrors: boolean;
+    errors: string[];
 }

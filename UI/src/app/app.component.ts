@@ -34,16 +34,16 @@ export class AppComponent {
   }
   SetScores(object: ReturnScore): void {
     console.log(object);
-    if (object.HasErrors) {
-      this.errors = object.Errors;
+    if (object.hasErrors) {
+      this.errors = object.errors;
     } else {
       this.errors = null;
       let totalScore = 0;
       for (let i = 0; i < 9; i++) { 
-          totalScore += object.Scores[i];
+          totalScore += object.scores[i];
           this.frameArray[i].score = totalScore;
       }
-      this.tenthFrame.score = totalScore + object.Scores[9];
+      this.tenthFrame.score = totalScore + object.scores[9];
       console.log(this.frameArray);
     }
   }
@@ -56,7 +56,7 @@ export class AppComponent {
     postObject.Frames = this.frameArray;
     postObject.TenthFrame = this.tenthFrame;
 
-    this.http.post('https://localhost:44387/api/scoring', postObject).subscribe(obj => this.SetScores(<ReturnScore>obj));
+    this.http.post('https://localhost:5001/api/scoring', postObject).subscribe(obj => this.SetScores(<ReturnScore>obj));
   }
 
 
